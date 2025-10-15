@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #cccccc;
+    line-height: 1.6;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" opacity="0.05"><rect width="100" height="100" fill="none" stroke="white" stroke-width="2"/></svg>');
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 2px solid #666;
+    padding: 20px;
+    background-color: #2a2a2a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid #666;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #ff6600;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 0 #000;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #ff9933;
+    margin: 20px 0 10px;
+    border-bottom: 1px dashed #666;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #cc9966;
+    margin: 15px 0 8px;
+}
+
+.logo {
+    font-size: 4rem;
+    margin: 10px 0;
+    color: #ff6600;
+}
+
+.status-bar {
+    background-color: #333;
+    border: 1px solid #666;
+    padding: 10px;
+    margin: 15px 0;
+    font-family: 'Courier New', monospace;
+}
+
+.alert {
+    background-color: #442222;
+    border: 1px solid #ff3333;
+    padding: 10px;
+    margin: 15px 0;
+    color: #ff9999;
+}
+
+.notice {
+    background-color: #224422;
+    border: 1px solid #33ff33;
+    padding: 10px;
+    margin: 15px 0;
+    color: #99ff99;
+}
+
+.warning {
+    background-color: #444422;
+    border: 1px solid #ffff33;
+    padding: 10px;
+    margin: 15px 0;
+    color: #ffff99;
+}
+
+.terminal {
+    background-color: #000;
+    color: #0f0;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #333;
+    font-family: 'Courier New', monospace;
+    overflow-x: auto;
+}
+
+.button {
+    display: inline-block;
+    background-color: #444;
+    color: #ccc;
+    border: 1px solid #666;
+    padding: 8px 15px;
+    margin: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    background-color: #555;
+    border-color: #888;
+}
+
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.nav-button {
+    background-color: #333;
+    color: #ff9933;
+    border: 1px solid #666;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #444;
+    border-color: #ff6600;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.grid-item {
+    background-color: #333;
+    border: 1px solid #555;
+    padding: 15px;
+}
+
+.race-card {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.race-card h3 {
+    color: #ff9933;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #666;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.scan-line {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 255, 0, 0.3);
+    animation: scan 5s linear infinite;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+@keyframes scan {
+    0% { top: 0; }
+    100% { top: 100%; }
+}
+
+.blink {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.content-section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+.info-table th, .info-table td {
+    border: 1px solid #555;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.info-table th {
+    background-color: #333;
+    color: #ff9933;
+}
+
+.info-table tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+.info-table tr:hover {
+    background-color: #333;
+}
