@@ -11,8 +11,8 @@ body {
     color: #e0e0e0;
     min-height: 100vh;
     background-image: 
-        linear-gradient(rgba(20, 20, 20, 0.8) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(20, 20, 20, 0.8) 1px, transparent 1px);
+        linear-gradient(rgba(70, 70, 70, 0.8) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(70, 70, 70, 0.8) 1px, transparent 1px);
     background-size: 50px 50px;
     line-height: 1.6;
 }
@@ -198,38 +198,6 @@ h1 {
 
 
 /* ОПОВЕЩЕНИЯ РАЗЛИЧНЫЕ СУЧКИ */
-.alert {
-    background-color: #442222;
-    padding: 30px;
-    border-radius: 12px;
-    border: 1px solid #ff3333;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #ff9999;
-}
-
-.notice {
-    background-color: #224422;
-    padding: 30px;
-    border-radius: 12px;
-    border: 1px solid #33ff33;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #99ff99;
-}
-
-.warning {
-    background-color: #444422;
-    padding: 30px;
-    border-radius: 12px;
-    border: 1px solid #ffff33;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #ffff99;
-}
 
 
 
