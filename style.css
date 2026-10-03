@@ -618,3 +618,97 @@ li::marker {
     background: var(--orange);
 }
 
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+   .site-footer {
+    width: min(1040px, 100%);
+    margin: 70px auto 0;
+    padding: 30px 0 0;
+    position: relative;
+    color: var(--muted);
+}
+
+.footer-line {
+    width: 100%;
+    height: 1px;
+    margin-bottom: 28px;
+    background: linear-gradient(
+        90deg,
+        var(--orange),
+        rgba(213,138,56,.18) 45%,
+        transparent
+    );
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1.4fr 1fr;
+    gap: 35px;
+}
+
+.footer-block {
+    min-width: 0;
+}
+
+.footer-title {
+    margin-bottom: 12px;
+    color: var(--white);
+    font: 700 13px/1 Roboto Condensed, sans-serif;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.footer-block p {
+    margin: 0 0 8px;
+    color: #707976;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.footer-link {
+    display: block;
+    width: fit-content;
+    margin-bottom: 7px;
+    color: #8d9691;
+    font-size: 12px;
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+.footer-link:hover {
+    color: var(--orange-bright);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 16px 0 5px;
+    border-top: 1px solid rgba(255,255,255,.06);
+    color: #555e5b;
+    font: 500 10px/1.4 Roboto Condensed, sans-serif;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+/* Footer на мобильных устройствах */
+
+@media (max-width: 700px) {
+    .site-footer {
+        margin-top: 50px;
+        padding-top: 25px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 7px;
+    }
+}
