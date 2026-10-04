@@ -694,3 +694,76 @@ li::marker {
     text-transform: uppercase;
 }
 
+/* =========================================================
+   404 ERROR PAGE
+   ========================================================= */
+
+   .error-page {
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.error-code {
+    color: var(--orange);
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: clamp(100px, 18vw, 190px);
+    font-weight: 700;
+    line-height: .8;
+    letter-spacing: .04em;
+    text-shadow: 0 0 35px rgba(213, 138, 56, .12);
+}
+
+.error-line {
+    width: 180px;
+    height: 1px;
+    margin: 30px 0 25px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--orange),
+        transparent
+    );
+}
+
+.error-page h1 {
+    margin: 0 0 15px;
+    font-size: 25px;
+    letter-spacing: .08em;
+}
+
+.error-description {
+    max-width: 600px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.error-subdescription {
+    margin: 7px 0 25px;
+    color: #666f6b;
+    font-size: 13px;
+}
+
+.error-button {
+    display: inline-block;
+    padding: 11px 20px;
+    border: 1px solid rgba(213, 138, 56, .45);
+    color: var(--orange);
+    background: rgba(213, 138, 56, .04);
+    font: 700 12px/1 "Roboto Condensed", sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+.error-button:hover {
+    color: var(--orange-bright);
+    border-color: var(--orange);
+    background: rgba(213, 138, 56, .09);
+}
